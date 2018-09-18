@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1270.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mariannus.view.StatisticC">
+    <children>
+        <LineChart fx:id="dayLine" layoutX="12.0" layoutY="221.0" legendVisible="false" prefHeight="471.0" prefWidth="490.0" title="Prehľad tržby za mesiac" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="12.0">
+            <xAxis>
+                <CategoryAxis label="den" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="trzba" side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <LineChart fx:id="monthLine" layoutX="780.0" layoutY="209.0" legendVisible="false" prefHeight="484.0" prefWidth="505.0" title="Prehľad tržby za rok" AnchorPane.bottomAnchor="36.0" AnchorPane.rightAnchor="15.0">
+            <xAxis>
+                <CategoryAxis label="mesiac" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="trzba" side="LEFT" />
+            </yAxis>
+        </LineChart>
+        <TableView fx:id="mostSell" layoutX="502.0" layoutY="215.0" prefHeight="428.0" prefWidth="255.0" AnchorPane.bottomAnchor="86.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="165.0" text="názov" />
+                <TableColumn fx:id="count" prefWidth="88.0" text="počet" />
+            </columns>
+        </TableView>
+        <DatePicker fx:id="picker" layoutX="897.0" layoutY="56.0" onAction="#drawStat" AnchorPane.leftAnchor="897.0" />
+        <Text fill="#1a3d9e" layoutX="78.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="t" text="Dnešná tržba" />
+        <Text layoutX="780.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="highlight" text="Vyber dátum" />
+        <Label id="trzba" fx:id="income" layoutX="334.0" layoutY="73.0" text="0" />
+        <ImageView fitHeight="103.0" fitWidth="97.0" layoutX="1211.0" layoutY="20.0" AnchorPane.rightAnchor="14.0">
+            <image>
+                <Image url="@logoM.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

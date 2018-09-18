@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mariannus.view.OrderViewC">
+   <children>
+      <Label fx:id="tableName" layoutX="473.0" layoutY="14.0" styleClass="highlight" text="Názov stola" AnchorPane.topAnchor="17.0" />
+      <TableView fx:id="orderedItems" layoutX="412.0" layoutY="59.0" onKeyPressed="#buttonPressed" prefHeight="439.0" prefWidth="1024.0" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+        <columns>
+          <TableColumn fx:id="code" prefWidth="189.0" text="Kód" />
+          <TableColumn fx:id="name" minWidth="0.0" prefWidth="544.0" text="Názov" />
+            <TableColumn fx:id="price" prefWidth="138.0" text="Cena" />
+            <TableColumn fx:id="paid" prefWidth="152.0" text="Zaplatené" />
+        </columns>
+      </TableView>
+      <Label layoutX="597.0" layoutY="514.0" styleClass="highlight" text="Zostáva zaplatiť:" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="318.0" />
+      <Label id="zostatok" fx:id="suma" layoutX="734.0" layoutY="514.0" text="0" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="257.0" />
+      <Button layoutX="744.0" layoutY="551.0" mnemonicParsing="false" onAction="#add" styleClass="univ" text="Pridaj" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="222.0" />
+      <Button layoutX="818.0" layoutY="551.0" mnemonicParsing="false" onAction="#delete" styleClass="del" text="Vymaž" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="142.0" />
+      <Button fx:id="bOk" layoutX="903.0" layoutY="551.0" mnemonicParsing="false" onAction="#handleOk" styleClass="ok" text="OK" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="14.0" />
+      <Label id="pytaj" fx:id="medzisucet" layoutX="939.0" layoutY="514.0" text="0" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="76.0" />
+      <Label layoutX="865.0" layoutY="514.0" styleClass="highlight" text="Pýtaj" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="124.0" />
+      <Button layoutX="473.0" layoutY="552.0" mnemonicParsing="false" onAction="#markAll" styleClass="ok" text="Zaplať všetko" AnchorPane.bottomAnchor="17.0" />
+      <Button layoutX="116.0" layoutY="552.0" mnemonicParsing="false" onAction="#changeTable" styleClass="univ" text="Zmeň stôl" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="120.0" />
+      <Button layoutX="14.0" layoutY="552.0" mnemonicParsing="false" onAction="#delOrder" styleClass="del" text="Vymaž stôl" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="14.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,137 @@
+.tab{
+    -fx-background-color:
+            #090a0c,
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,200,0,1) , 25, 0.2 , 0 , 1 );
+    -fx-font-family: "Calibri";
+    -fx-font-size: 20px;
+    -fx-padding: 0 0 0 10;
+}
+
+.circleT{
+    -fx-background-color:
+            #090a0c,
+            radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 100,100,100,100;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,200,0,1) , 25, 0.2 , 0 , 1 );
+    -fx-font-family: "Calibri";
+    -fx-font-size: 20px;
+    -fx-padding: 0 0 0 10;
+}
+.highlight{
+    -fx-font-family: "Calibri";
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+#zostatok{
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 18;
+    -fx-text-fill: #00446d;
+    -fx-font-weight: bold;
+}
+#pytaj{
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 18;
+    -fx-text-fill: #209e0c;
+    -fx-font-weight: bold;
+}
+.bucat{
+    -fx-background-color:linear-gradient(#00446d, #047195);
+    -fx-pref-width: 150px;
+    -fx-pref-height: 45px;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 14pt;
+    -fx-font-weight: bold;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 10, 0.1 , 0 , 1 );*/
+}
+.bucat:hover{
+    -fx-background-color: #0693c9;
+}
+.bucat:focused{
+    -fx-background-color: #0693c9;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,155,0,1) , 10, 0.6 , 0 , 1 );
+}
+
+.buit{
+    -fx-background-color:linear-gradient(#2a5214, #4b952f);
+    -fx-pref-width: 180px;
+    -fx-pref-height: 45px;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 10, 0.1 , 0 , 1 );
+}
+.buit:hover{
+    -fx-background-color: #3ea905;
+}
+.buit:focused{
+    -fx-background-color: #74d300;
+    -fx-effect: dropshadow( three-pass-box , rgb(211, 173, 7), 10, 0.6 , 0 , 1 );
+}
+
+.ok{
+    -fx-background-color: #329544;
+    /*-fx-pref-width: 180px;*/
+    /*-fx-pref-height: 45px;*/
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 10, 0.1 , 0 , 1 );*/
+}
+.ok:hover{
+    -fx-background-color: #20ce25;
+}
+
+.del{
+    -fx-background-color: #be453d;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 10, 0.1 , 0 , 1 );*/
+}
+.del:hover{
+    -fx-background-color: #f22022;
+}
+.univ{
+    -fx-background-color: #dda03d;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-family: "Calibri";
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+    /*-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 10, 0.1 , 0 , 1 );*/
+}
+.univ:hover{
+    -fx-background-color: #f3d209;
+}
+
+.t{
+    -fx-font-family: "Gill Sans MT";
+    -fx-text-fill: #00446d;
+    -fx-font-size: 36;
+    -fx-font-weight: bold;
+}
+
+#trzba{
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-size: 36;
+    -fx-text-fill: #209e0c;
+    -fx-font-weight: bold;
+
+}
+Rectangle{
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,1) , 10, 0.1 , 0 , 1 );
+}

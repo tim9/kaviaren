@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.Rectangle?>
+
+<TabPane fx:id="tabpane" prefHeight="720.0" prefWidth="1270.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mariannus.view.MainViewC">
+   <tabs>
+      <Tab text="Interier">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@main.css">
+               <children>
+                  <Label id="1" fx:id="tab1" layoutX="765.0" layoutY="537.0" prefHeight="106.0" prefWidth="101.0" styleClass="tab" text="stôl 1" />
+                  <Label id="2" fx:id="tab2" layoutX="765.0" layoutY="356.0" prefHeight="106.0" prefWidth="101.0" styleClass="tab" text="stôl 2" />
+                  <Label id="3" fx:id="tab4" layoutX="651.0" layoutY="49.0" prefHeight="230.0" prefWidth="100.0" styleClass="tab" text="stôl 3" />
+                  <Label id="4" fx:id="tab5" layoutX="516.0" layoutY="20.0" prefHeight="106.0" prefWidth="101.0" styleClass="tab" text="stôl 4" />
+                   <Label id="5" fx:id="tab8" layoutX="371.0" layoutY="109.0" prefHeight="106.0" prefWidth="101.0" styleClass="tab" text="stôl 5" />
+                   <Label id="6" fx:id="tab9" layoutX="125.0" layoutY="114.0" prefHeight="100.0" prefWidth="91.0" styleClass="tab" text="stôl 6" />
+                   <Label id="7" fx:id="tab10" layoutX="371.0" layoutY="288.0" prefHeight="106.0" prefWidth="101.0" styleClass="tab" text="stôl 7" />
+                   <Label id="8" fx:id="tab7" layoutX="216.0" layoutY="290.0" prefHeight="106.0" prefWidth="101.0" styleClass="tab" text=" stol 8" />
+                   <Label id="9" fx:id="tab36" layoutX="36.0" layoutY="288.0" prefHeight="106.0" prefWidth="101.0" styleClass="tab" text=" stol 9" />
+                   <Label id="10" fx:id="tab6" layoutX="465.0" layoutY="469.0" prefHeight="82.0" prefWidth="83.0" styleClass="tab" text="bar 1" />
+                   <Label id="11" fx:id="tab3" layoutX="164.0" layoutY="470.0" prefHeight="79.0" prefWidth="82.0" styleClass="tab" text="bar 2" />
+                  <Label id="12" fx:id="tab13" layoutX="955.0" layoutY="262.0" prefHeight="81.0" prefWidth="75.0" styleClass="tab" text="f 1" />
+                  <Label id="13" fx:id="tab14" layoutX="1096.0" layoutY="262.0" prefHeight="81.0" prefWidth="75.0" styleClass="tab" text="f 2" />
+                   <Label id="14" fx:id="tab12" layoutX="955.0" layoutY="132.0" prefHeight="81.0" prefWidth="75.0" styleClass="tab" text="f 3" />
+                   <Label id="15" fx:id="tab11" layoutX="1096.0" layoutY="132.0" prefHeight="81.0" prefWidth="75.0" styleClass="tab" text="f 4" />
+
+                   <ImageView fitHeight="79.0" fitWidth="72.0" layoutX="1184.0" layoutY="14.0">
+                       <image>
+                           <Image url="@logoM.png" />
+                       </image>
+                   </ImageView>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="76.0" layoutX="156.0" layoutY="591.0" stroke="BLACK" strokeDashOffset="12.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="0.0" width="495.0">
+                     <fill>
+                        <RadialGradient centerX="0.3181818181818182" centerY="0.28640776699029125" radius="0.5">
+                           <stops>
+                              <Stop color="#b8671d" />
+                              <Stop color="#8d4e14" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                     <effect>
+                        <ColorAdjust />
+                     </effect></Rectangle>
+
+                  <Label fx:id="info" layoutX="29.0" layoutY="20.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Terasa">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@main.css">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="62.0" layoutX="1191.0" layoutY="598.0">
+                     <image>
+                        <Image url="@logoM.png" />
+                     </image>
+                  </ImageView>
+                  <Label id="16" fx:id="tab15" layoutX="52.0" layoutY="541.0" prefHeight="78.0" prefWidth="148.0" styleClass="tab" text="stol 1" />
+                  <Label id="17" fx:id="tab16" layoutX="209.0" layoutY="542.0" prefHeight="78.0" prefWidth="148.0" styleClass="tab" text="stol 2" />
+                  <Label id="18" fx:id="tab17" layoutX="283.0" layoutY="404.0" prefHeight="88.0" prefWidth="88.0" styleClass="circleT" text="stol 3" />
+                  <Label id="19" fx:id="tab21" layoutX="420.0" layoutY="465.0" prefHeight="88.0" prefWidth="88.0" rotate="47.7" styleClass="tab" text="stol 4" />
+                  <Label id="20" fx:id="tab22" layoutX="606.0" layoutY="474.0" prefHeight="88.0" prefWidth="88.0" rotate="47.7" styleClass="tab" text="stol 5" />
+                  <Label id="21" fx:id="tab18" layoutX="358.0" layoutY="212.0" prefHeight="74.0" prefWidth="72.0" styleClass="circleT" text="stol 6" />
+                   <Label id="22" fx:id="tab24" layoutX="441.0" layoutY="301.0" prefHeight="88.0" prefWidth="88.0" rotate="47.7" styleClass="tab" text="stol 7" />
+                   <Label id="23" fx:id="tab23" layoutX="618.0" layoutY="318.0" prefHeight="88.0" prefWidth="88.0" rotate="47.7" styleClass="tab" text="stol 8" />
+                   <Label id="24" fx:id="tab27" layoutX="699.0" layoutY="212.0" prefHeight="68.0" prefWidth="67.0" styleClass="circleT" text="stol 9" />
+                  <Label id="25" fx:id="tab19" layoutX="69.0" layoutY="37.0" prefHeight="78.0" prefWidth="148.0" styleClass="tab" text="stol 10" />
+                  <Label id="26" fx:id="tab20" layoutX="268.0" layoutY="35.0" prefHeight="88.0" prefWidth="88.0" rotate="48.0" styleClass="tab" text="stol 11" />
+                  <Label id="27" fx:id="tab25" layoutX="496.0" layoutY="15.0" prefHeight="150.0" prefWidth="81.0" styleClass="tab" text="stol 12" />
+                  <Label id="28" fx:id="tab26" layoutX="642.0" layoutY="18.0" prefHeight="150.0" prefWidth="81.0" styleClass="tab" text="stol 13" />
+                  <Label id="29" fx:id="tab28" layoutX="818.0" layoutY="15.0" prefHeight="88.0" prefWidth="89.0" styleClass="tab" text="stol 14" />
+                  <Label id="30" fx:id="tab30" layoutX="929.0" layoutY="15.0" prefHeight="88.0" prefWidth="88.0" styleClass="tab" text="stol 15" />
+                  <Label id="31" fx:id="tab31" layoutX="1030.0" layoutY="25.0" prefHeight="70.0" prefWidth="117.0" styleClass="tab" text="stol 16" />
+                   <Label id="32" fx:id="tab35" layoutX="1172.0" layoutY="26.0" prefHeight="69.0" prefWidth="67.0" styleClass="tab" text="stol 17" />
+                   <Label id="33" fx:id="tab29" layoutX="782.0" layoutY="421.0" prefHeight="94.0" prefWidth="97.0" styleClass="tab" text="stol 18" />
+                  <Label id="34" fx:id="tab32" layoutX="904.0" layoutY="378.0" prefHeight="138.0" prefWidth="76.0" styleClass="tab" text="stol 19" />
+                  <Label id="35" fx:id="tab33" layoutX="1014.0" layoutY="411.0" prefHeight="103.0" prefWidth="97.0" rotate="45.0" styleClass="tab" text="stol 20" />
+                  <Label id="36" fx:id="tab34" layoutX="1157.0" layoutY="431.0" prefHeight="72.0" prefWidth="81.0" rotate="45.0" styleClass="tab" text="stol 21" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" height="72.0" layoutX="402.0" layoutY="594.0" stroke="BLACK" strokeDashOffset="12.0" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="0.0" width="322.0">
+                     <fill>
+                        <RadialGradient centerX="0.3181818181818182" centerY="0.28640776699029125" radius="0.5">
+                           <stops>
+                              <Stop color="#b8671d" />
+                              <Stop color="#8d4e14" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                     <effect>
+                        <ColorAdjust />
+                     </effect></Rectangle>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Správa tovaru">
+         <content>
+             <AnchorPane maxHeight="1080" maxWidth="1920" minHeight="0" minWidth="0">
+                 <children>
+                     <fx:include source="ItemView.fxml" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+                 </children>
+             </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Štatistika">
+        <content>
+            <AnchorPane maxHeight="720.0" maxWidth="1360.0" minHeight="0" minWidth="0">
+                <children>
+                    <fx:include source="Statistic.fxml" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+                </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+   </tabs>
+</TabPane>
